@@ -1,0 +1,41 @@
+@startuml
+
+title __Matrix Calculator UML Class Diagram__\n
+
+    class Main {
+        {static} + main()
+        + printMenu()
+        + run()
+        - inputHelper()
+    }
+
+  
+
+    class Matrix {
+        - col : int
+        - data : double[][]
+        - row : int
+        + Matrix()
+        + Matrix()
+        + getCol()
+        + getRow()
+        ~ add()
+        ~ display()
+        ~ multiply()
+        ~ subtract()
+        ~ transpose()
+    }
+
+  
+
+  Main -up-|> acm.program.ConsoleProgram
+  Main o-- Matrix : matrixA, matrixB, matrixC
+
+
+right footer
+
+
+by mkc
+endfooter
+
+@enduml
