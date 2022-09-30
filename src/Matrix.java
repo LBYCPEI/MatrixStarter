@@ -2,7 +2,7 @@
  * Matrix.java
  * Author: cobalt - mkc
  * Date created: July 8, 2019
- * Date modified: July 27, 2022
+ * Date modified: September 30, 2022
  */
 
 public class Matrix {
@@ -59,11 +59,10 @@ public class Matrix {
     Matrix transpose() {
         if (row <= 0 || col <= 0)
             throw new RuntimeException("Illegal matrix dimensions.");
-        Matrix result = new Matrix(col, row);
         // ********************************************
         // YOUR CODE HERE
         // ********************************************
-        return result;
+        return null;
     }
 
     /**
@@ -72,36 +71,31 @@ public class Matrix {
      * @return
      */
     Matrix add(Matrix addend2) {
-        Matrix addend1 = this;
-        if (addend1.row != addend2.row || addend1.col != addend2.col)
-            throw new RuntimeException("Illegal matrix dimensions.");
-        Matrix sum = new Matrix(row, col);
+        //if (row != addend2.row || col != addend2.col)
+        //    throw new RuntimeException("Illegal matrix dimensions.");
         // ********************************************
         // YOUR CODE HERE
         // ********************************************
-        return sum;
+        return null;
     }
 
     Matrix subtract(Matrix subtrahend) {
-        Matrix minuend = this;
-        if (subtrahend.row != minuend.row || subtrahend.col != minuend.col)
-            throw new RuntimeException("Illegal matrix dimensions.");
-        Matrix difference = new Matrix(row, col);
+        //if (row != minuend.row || subtrahend.col != minuend.col)
+        //    throw new RuntimeException("Illegal matrix dimensions.");
         // ********************************************
         // YOUR CODE HERE
         // ********************************************
-        return difference;
+        return null;
     }
 
     Matrix multiply(Matrix factor2) {
-        Matrix factor1 = this;
-        if (factor1.col != factor2.row) throw new RuntimeException("Illegal matrix dimensions.");
-        Matrix product = new Matrix(factor1.row, factor2.col);
+        //if (col != factor2.row) throw new RuntimeException("Illegal matrix dimensions.");
+        //Matrix product = new Matrix(factor1.row, factor2.col);
         // ********************************************
         // YOUR CODE HERE
         // ********************************************
         // ********************************************
-        return product;
+        return null;
     }
 
     /**
