@@ -26,9 +26,9 @@ public class Main extends ConsoleProgram {
                     println("matrixB: ");
                     matrixB = inputHelper();
                     println("matrixA = ");
-                    println(matrixA.display());
+                    println(matrixA);
                     println("matrixB = ");
-                    println(matrixB.display());
+                    println(matrixB);
                     break;
 
                 case 1: // Addition
@@ -38,9 +38,9 @@ public class Main extends ConsoleProgram {
                     }
                     println("The sum of ");
                     println("matrixA = ");
-                    println(matrixA.display());
+                    println(matrixA);
                     println("and matrixB = ");
-                    println(matrixB.display());
+                    println(matrixB);
                     println(" is equal to ");
                     try {
                         matrixC = matrixA.add(matrixB);
@@ -49,7 +49,7 @@ public class Main extends ConsoleProgram {
                         e.printStackTrace();
                         break;
                     }
-                    println(matrixC.display());
+                    println(matrixC);
                     break;
 
                 case 2: // Subtraction
@@ -59,9 +59,9 @@ public class Main extends ConsoleProgram {
                     }
                     println("The difference of ");
                     println("matrixA = ");
-                    println(matrixA.display());
+                    println(matrixA);
                     println("and matrixB = ");
-                    println(matrixB.display());
+                    println(matrixB);
                     println(" is equal to ");
                     try {
                         matrixC = matrixA.subtract(matrixB);
@@ -70,7 +70,7 @@ public class Main extends ConsoleProgram {
                         e.printStackTrace();
                         break;
                     }
-                    println(matrixC.display());
+                    println(matrixC);
                     break;
 
                 case 3: // Transpose
@@ -78,10 +78,10 @@ public class Main extends ConsoleProgram {
                     println("matrixD: ");
                     Matrix matrixD = inputHelper();
                     println("matrixD = ");
-                    println(matrixD.display());
+                    println(matrixD);
                     println("The transpose is: ");
                     matrixC = matrixD.transpose();
-                    println(matrixC.display());
+                    println(matrixC);
                     break;
 
                 case 4: // Multiplication
@@ -91,9 +91,9 @@ public class Main extends ConsoleProgram {
                     }
                     println("The product of ");
                     println("matrixA = ");
-                    println(matrixA.display());
+                    println(matrixA);
                     println("and matrixB = ");
-                    println(matrixB.display());
+                    println(matrixB);
                     println(" is equal to ");
                     try {
                         matrixC = matrixA.multiply(matrixB);
@@ -102,7 +102,7 @@ public class Main extends ConsoleProgram {
                         e.printStackTrace();
                         break;
                     }
-                    println(matrixC.display());
+                    println(matrixC);
                     break;
 
                 case 5:
