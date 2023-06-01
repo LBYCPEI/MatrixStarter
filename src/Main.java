@@ -3,7 +3,7 @@
  * ---------------------
  * This class is a Matrix demo class
  * Author: Cobalt - mkc
- * Date modified: July 8, 2019
+ * Date modified: June 1, 2023
  */
 
 import acm.program.*;
